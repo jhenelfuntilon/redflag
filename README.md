@@ -1,7 +1,7 @@
 # Exam
 
-- Change ```$config['base_url']``` to you host. If your are running Valet you can park this repo and skip this step.
-- Create database named 'redflag'
+- Change ```$config['base_url']``` to your desired host. If your are running Valet you can park this repo and skip this step.
+- Create database named '```redflag```'
 - Run this SQL statements
 ```sql
 CREATE TABLE `ci_sessions` (
