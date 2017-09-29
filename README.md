@@ -24,6 +24,10 @@ CREATE TABLE `resources` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 ```
+- run ``` composer install ``` via cli
+- If you wish to add data to list you can run ``` php index.php faker generate <row-count> ``` where <row-count> (optional, default is 5) is the number of record you want to add and a max of 20.
+
+
 ## Built With:
 
 - ES6 Supported Browsers
