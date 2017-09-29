@@ -20,8 +20,10 @@ class Resources_model extends CI_Model {
 	}
 
 	/**
-	 * Save 
+	 * Store resource
 	 *
+	 * @param 
+	 * @return array 
 	 */
 	public function save()
 	{
@@ -40,6 +42,12 @@ class Resources_model extends CI_Model {
 		];
 	}
 
+	/**
+	 * Fetch all resource
+	 * 
+	 * @param 
+	 * @return object
+	 */
 	public function all()
 	{
 		return $this->db->get($this->table)->result();

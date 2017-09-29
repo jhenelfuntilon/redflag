@@ -17,7 +17,6 @@ class Page extends CI_Controller {
 			[
 				'template' => 'page/index',
 				'data' => [
-					'title' => 'Red Flag Group',
 					'resources' => $resources,
 				],
 			]
