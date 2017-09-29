@@ -32,13 +32,16 @@ class Faker extends CI_Controller {
 				exit;
 			}
 			$this->load->model('resources_model','resources');
-			$min = $this->resources->query->select_max('id')->get($this->resources->table)->row()->id;
+			
 			for ($i=0; $i < $rows; $i++) { 
 				$this->resources->number = $this->faker->randomNumber(NULL, true);
 				$this->resources->word = $this->faker->unique()->word();
 				$this->resources->save();
 			}
-			echo 'Faker successfully added ' . $rows . ' records.' . PHP_EOL;
+			echo 'Faker successfully added ' . (int) $rows . ' records.' . PHP_EOL;
+			exit;
+		} else {
+			echo 'Invalid command. Faker generate must follow with a number.' . PHP_EOL;
 			exit;
 		}
 	}
