@@ -24,3 +24,13 @@ CREATE TABLE `resources` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 ```
+## Built With:
+
+- ES6 Supported Browsers
+- jQuery v3.2.1
+- Bootstrap 4 4.0.0-beta
+- Loadash 4.17.4
+- DataTables 1.10.16
+- PHP version 7.1.8
+- Codeigniter 3.1.6
+- MySQL 5.7.19
